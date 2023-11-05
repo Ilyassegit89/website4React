@@ -1,5 +1,5 @@
-import NavigationBar from "./NavigationBar"
-import Home from "./pages/Home"
+import NavigationBar from "./NavigationBar.jsx"
+import Home from "./pages/Home.jsx"
 import About from "./pages/About"
 import Company from "./pages/Company"
 import Ressources from "./pages/Ressources";
@@ -14,7 +14,7 @@ function App(){
         <NavigationBar />
         <div className="">
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route exact path="/" element={<Home />} />
                 <Route path="/About" element={<About />} />
                 <Route path="/Company" element={<Company />} />
                 <Route path="/Ressources" element={<Ressources />} />
